@@ -173,8 +173,7 @@ body {
     z-index: -1;
     position: absolute;
     width: 100%;
-    top: 25vh;
-    height: calc(100% - 25vh);
+    height: 100%;
     
 }
 
@@ -183,7 +182,7 @@ body {
 
 .carousel {
     z-index: -1;
-   
+    top: calc(50% - 23vh);   
 }
 
 .card {
@@ -198,9 +197,12 @@ body {
 
 
 #desc {
-    height: 30vh;
+    position: fixed;
+    top: auto;
+    bottom: 8vw;
+    height: auto;
     width: 100vw;
-    padding: 10pt 4vw 10pt 4vw;
+    padding: 10pt 4vw 0 4vw;
     display: table-cell;
     vertical-align: middle;
 }
