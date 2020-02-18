@@ -1,0 +1,248 @@
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    font-size: 10pt;
+    
+}
+
+h3{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+h4{
+    margin-bottom: 10pt;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+#folder{
+    display: none;
+}
+
+#menumob{
+    display: none;
+}
+
+body{overflow-x: hidden;
+}
+
+header {
+    font-family: 'Nunito', sans-serif;
+    font-size: 10pt;
+}
+
+#navbar {
+    width: 100%;
+    background-color: white;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    height: 0px;
+    padding: 5vw;
+    display: inline-flex;
+    align-items: center;
+}
+
+a{
+    -webkit-transition: font-weight .2s;
+    -moz-transition: font-weight .2s;
+    -o-transition: font-weight .2s;
+    transition: font-weight .2s;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{ font-weight: 700; }
+
+.s {
+    width: 25vw;
+    
+}
+
+.s a:nth-child(2){
+    position: absolute;
+    left: 11.2vw;
+}
+
+.s a:nth-child(3){
+    position: absolute;
+    left: 18.6vw;
+}
+
+.s a:nth-child(4){
+    position: absolute;
+    left: 24.5vw;
+}
+
+.s a:nth-child(n){
+    float: left;
+}
+
+
+@media only screen and (max-width: 1050px) {
+    body{
+        background-color: red;
+    }
+    .s {
+        display: flex;
+        justify-content: space-between;
+}
+    .s a:nth-child(n){
+    width: auto;
+    float: none;
+        position: inherit;
+    
+}
+    
+}
+
+
+.c {
+    width: 40vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.c #imgcont{
+    width: 20vw;
+    margin: auto;
+    height: 2.7vw;
+    background-image: url(media/firma.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.d {
+    width: 25vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.d a{}
+
+.c img {
+    margin: auto;
+    height: auto;
+}
+
+/*hovers importanti*/
+
+#desc{
+    height: calc(calc(40vh - 100px) - 20pt);
+    width: 100vw;
+    padding: 10pt 30vw 10pt 30vw;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#desc h4, p{
+    text-align: center;
+    width: 40vw;
+}
+
+
+
+
+.carousel {
+ margin-top: 100px;
+}
+
+.carousel img {
+    width: auto;
+}
+
+
+.card {
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: .5;
+    height: 60vh;
+    margin-right: 2vw;
+    background: white;
+}
+
+.card.is-selected{
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 1;
+}
+
+
+/* big buttons, no circle */
+.flickity-prev-next-button {
+    -webkit-transition: opacity .2s;
+    -moz-transition: opacity .2s;
+    -o-transition: opacity .2s;
+    transition: opacity .2s;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+}
+
+.flickity-prev-next-button.previous {
+    left: 5vw;
+}
+
+.flickity-prev-next-button.next {
+    right: 5vw;
+}
+
+.flickity-prev-next-button:hover {
+    background-color: black;
+    opacity: .7;
+}
+
+/* arrow color */
+.flickity-prev-next-button .arrow {
+    fill: white;
+}
+
+.flickity-prev-next-button.no-svg {
+  color: black;
+}
+
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+    display: none;
+}
+
+/* position dots in gallery */
+.flickity-page-dots {
+    bottom: 0px;
+    display: none;
+}
+
+/* white circles */
+.flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 0;
+    background: transparent;
+    border: 2px solid black;
+}
+
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+    background-color: black;
+}
+
+
+.clearer {
+    clear: both;
+}

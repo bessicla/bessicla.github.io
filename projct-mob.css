@@ -1,0 +1,265 @@
+* {
+    top: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    font-size: 4.5vw;
+}
+
+header {
+    border: 0;
+    top: 0;
+    position: fixed;
+    font-family: 'Nunito', sans-serif;
+    width: 100vw;
+    height: 34vw;
+    background-color: white;
+}
+
+#navbar {
+    width: 100vw;
+    top: 0;
+    height: 100px;
+    padding: 5vw;
+    display: flex;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.s,
+.d {
+    display: none;
+}
+
+
+.c {
+    top: 7.8vw;
+    position: absolute;
+    z-index: 100;
+    left: 20vw;
+    right: 20vw;
+    margin: auto;
+    width: 53vw;
+    height: 10vw;
+    background-image: url(media/firma2.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#menumob {
+    text-align: center;
+    overflow: hidden;
+    height: 34vw;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    display: flex;
+}
+
+#menumob.open {
+    height: 34vw;
+    transition-delay: 0s;
+}
+
+#menumob #linksbk{
+    -webkit-transition: .5s ease-in;
+    -moz-transition: .5s ease-in;
+    -o-transition: .5s ease-in;
+    transition: .5s ease-in;
+    position: fixed;
+    width: 100vw;
+    height: 30vw;
+    background-color: white;
+    overflow: hidden;
+    
+}
+
+#menumob.open #linksbk{
+    height: 100vh;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    
+}
+
+#menumob span {
+    -webkit-transition: .8s;
+    -moz-transition: .8s;
+    -o-transition: .8s;
+    transition: .8s;
+    position: fixed;
+    left: calc(50% - 3vw);
+    width: 5vw;
+    height: 0.6vw;
+    background-color: black;
+    border-radius: 0.6vw;
+}
+
+#menumob span:nth-child(3) {
+    top: 24.8vw;
+    
+}
+
+#menumob.open span:nth-child(3) {
+    top: calc(100% - 10vw);
+}
+
+#menumob span:nth-child(2) {
+    top: 23.2vw;
+}
+
+#menumob.open span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+#menumob span:nth-child(1) {
+    top: 21.6vw;
+}
+
+#menumob.open span:nth-child(1) {
+    top: 23.2vw;
+    transform: rotate(-45deg);
+}
+
+#menumob span:nth-child(4) {
+    cursor: pointer;
+    opacity: 0;
+    height: calc(0.8vw * 5);
+    background-color: #000000;
+    top: 21.6vw;
+}
+
+#menumob.open span:nth-child(4) {
+}
+
+#menumob #menulinks{
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+    transition-delay: 0s;
+    width: 100vw;
+    text-align: center;
+    line-height: 4.5vw;
+    position: relative;
+    flex-flow: column;
+    display: flex;
+    bottom: 50vh;
+    top: calc(50vh - 20vw); 
+    opacity: 0;
+}
+
+#menumob.open #menulinks{
+    transition-delay: .6s;
+    opacity: 100%;
+}
+
+#menumob a:nth-child(1) {
+   font-weight: 500;
+}
+
+/*hovers importanti*/
+
+body {
+    z-index: -1;
+    position: absolute;
+    top: 22.5vh;
+    height: 67.5vh;
+    width: 100vw;
+}
+
+
+/* external css: flickity.css */
+
+.carousel {
+    z-index: -1;
+}
+
+.card {
+    height: 45vh;
+    margin-right: 2vw;
+}
+
+.carousel img {
+    width: auto;
+}
+
+#desc {
+    height: 32.5vh;
+    width: 100vw;
+    padding: 10pt 4vw 10pt 4vw;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#desc h4, p{
+    text-align: center;
+}
+
+/* big buttons, no circle */
+.flickity-prev-next-button {
+    width: 6vw;
+    height: 6vw;
+    background-color: black;
+}
+
+.flickity-prev-next-button.previous {
+    left: 4vw;
+}
+
+.flickity-prev-next-button.next {
+    right: 4vw;
+}
+
+.flickity-prev-next-button:hover {
+    background-color: black;
+    opacity: .8;
+}
+
+/* arrow color */
+.flickity-prev-next-button .arrow {
+    fill: white;
+}
+
+.flickity-prev-next-button.no-svg {
+  color: black;
+}
+
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+    display: none;
+}
+
+/* position dots in gallery */
+.flickity-page-dots {
+    bottom: 0px;
+    display: none;
+}
+
+/* white circles */
+.flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    display: none;
+    border: 2px solid black;
+}
+
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+    background-color: black;
+}
+
+
+
+.clearer {
+    clear: both;
+}
