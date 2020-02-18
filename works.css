@@ -110,10 +110,14 @@ a:hover{ font-weight: 700; }
     justify-content: center;
 }
 
-.c img{
+.c #imgcont{
     width: 20vw;
     margin: auto;
-    height: auto;
+    height: 2.7vw;
+    background-image: url(media/firma.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .d {
