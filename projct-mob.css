@@ -185,13 +185,15 @@ body {
 }
 
 .card {
+    display: block;
     height: 45vh;
-    margin-right: 2vw;
+    margin-right: 1vw;
+    max-width: 100%;
+    min-width: 23vh;
+    top:50%;
+    transform: translateY(-50%);
 }
 
-.carousel img {
-    width: auto;
-}
 
 #desc {
     height: 32.5vh;
