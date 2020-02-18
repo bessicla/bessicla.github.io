@@ -109,13 +109,6 @@ a:hover{ font-weight: 700; }
 
 .c {
     width: 40vw;
-    height: auto;
-    display: flex;
-    justify-content: center;
-}
-
-.c #imgcont{
-    width: 20vw;
     margin: auto;
     height: 2.7vw;
     background-image: url(media/firma.svg);
