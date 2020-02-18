@@ -172,9 +172,10 @@ a{
 body {
     z-index: -1;
     position: absolute;
-    top: 22.5vh;
-    height: 67.5vh;
-    width: 100vw;
+    width: 100%;
+    top: 25vh;
+    height: calc(100% - 25vh);
+    
 }
 
 
@@ -182,6 +183,7 @@ body {
 
 .carousel {
     z-index: -1;
+   
 }
 
 .card {
@@ -189,14 +191,14 @@ body {
     height: 45vh;
     margin-right: 1vw;
     max-width: 100%;
-    min-width: 23vh;
+    min-width: 23vw;
     top:50%;
     transform: translateY(-50%);
 }
 
 
 #desc {
-    height: 32.5vh;
+    height: 30vh;
     width: 100vw;
     padding: 10pt 4vw 10pt 4vw;
     display: table-cell;
