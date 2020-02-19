@@ -11,7 +11,8 @@
 
 h3{
     font-family: 'Nunito', sans-serif;
-    font-weight: 700;
+    text-decoration: underline;
+    font-weight: 500;
 }
 
 h4{
@@ -58,7 +59,8 @@ a{
     color: black;
 }
 
-a:hover{ font-weight: 700; }
+a:hover{ 
+text-decoration: underline;}
 
 .s {
     width: 25vw;
@@ -86,9 +88,6 @@ a:hover{ font-weight: 700; }
 
 
 @media only screen and (max-width: 1050px) {
-    body{
-        background-color: red;
-    }
     .s {
         display: flex;
         justify-content: space-between;
@@ -131,12 +130,11 @@ a:hover{ font-weight: 700; }
 
 #grid{
     margin-top: 10vw;
-    padding: 5%;
-    padding-top: 0;
+    padding: 0 5% 0 5%;
     height: auto;
     width: 100%;
     column-count: 3;
-    column-gap: 5vw;   
+    column-gap: 5vw;
 }
 
 @media only screen and (max-width: 600px) {
@@ -192,10 +190,100 @@ a:hover{ font-weight: 700; }
     text-align: center;
 }
 
+#footer{
+    margin-top: -1.5vw;
+    background-color: #FFE700;
+    height: 20vw;
+    width: 100%;
+    padding: 3.5vw 5vw 3.5vw 5vw;;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub{
+    position: relative;
+    width: calc(50% - 2.5vw);
+    height: calc(20vw - 7vw);
+    justify-content: space-between;
+    display: flex;
+}
+
+.sub .sub{
+    display: block;
+    line-height: 25pt;
+    position: relative;
+}
+
+.subsub {
+    position: absolute;
+    display: flex;
+    height: 2.5vw;
+    padding: .15vw 0 .15vw 0;
+    align-items: center;
+    bottom: 2.5vw;
+}
+
+.subsub:nth-child(3){
+    bottom: 5vw;
+} 
+
+.subsub img{
+    height: 100%;
+    margin-right: .3vw;
+}
+
 
 
 /*hovers importanti*/
 
+.sub:nth-child(2){
+} 
+
+.clo{
+    height: 11vw;
+}
+
+.sub form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.sub input{
+    width: calc(50% - 2.5vw);
+    padding: 0 0 0 .5vw;
+    height: 2.5vw;
+    background-color: white;
+    border: 0px;
+}
+
+
+.sub textarea{
+    padding: .5vw;
+    position: absolute;
+    width: 100%;
+    top: 3vw;
+    height: 7vw;
+    border: 0;
+    resize: none;
+    
+}
+
+.sub button{
+    position: absolute;
+    border: 0;
+    background-color: black;
+    color: white;
+    height: 2.5vw;
+    padding: .15vw 0 .15vw 0;
+    text-align: center;
+    width: 10vw;
+    bottom: 0;
+    right: 0;
+}
 
 
 

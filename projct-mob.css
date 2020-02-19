@@ -16,7 +16,6 @@ header {
     font-family: 'Nunito', sans-serif;
     width: 100vw;
     height: 34vw;
-    background-color: white;
 }
 
 #navbar {
@@ -48,6 +47,7 @@ a{
     margin: auto;
     width: 53vw;
     height: 10vw;
+    background-color: ;
     background-image: url(media/firma2.svg);
     background-position: top;
     background-repeat: no-repeat;
@@ -55,6 +55,12 @@ a{
 }
 
 #menumob {
+    -webkit-transition: height .6s ease-out;
+    -moz-transition: height .6s ease-out;
+    -o-transition: height .6s ease-out;
+    transition: height .6s ease-out;
+    transition-delay: .2s;
+    z-index: 50;
     text-align: center;
     overflow: hidden;
     height: 34vw;
@@ -62,33 +68,16 @@ a{
     position: absolute;
     top: 0;
     display: flex;
+    background-color: white;
 }
 
 #menumob.open {
-    height: 34vw;
-    transition-delay: 0s;
-}
-
-#menumob #linksbk{
-    -webkit-transition: .5s ease-in;
-    -moz-transition: .5s ease-in;
-    -o-transition: .5s ease-in;
-    transition: .5s ease-in;
-    position: fixed;
-    width: 100vw;
-    height: 30vw;
-    background-color: white;
-    overflow: hidden;
-    
-}
-
-#menumob.open #linksbk{
+    -webkit-transition: height .5s ease;
+    -moz-transition: height .5s ease;
+    -o-transition: height .5s ease;
+    transition: height .5s ease;
+    transition-delay: .02s;
     height: 100vh;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s;
-    
 }
 
 #menumob span {
@@ -142,26 +131,27 @@ a{
 }
 
 #menumob #menulinks{
-    -webkit-transition: opacity .5s;
-    -moz-transition: opacity .5s;
-    -o-transition: opacity .5s;
-    transition: opacity .5s;
-    transition-delay: 0s;
-    width: 100vw;
+    width: 100%;
     text-align: center;
     line-height: 4.5vw;
-    position: relative;
-    flex-flow: column;
     display: flex;
-    bottom: 50vh;
-    top: calc(50vh - 20vw); 
-    opacity: 0;
+    flex-flow: column;
+    transform: translateY(-50vh);
+    opacity: 0%;
 }
 
 #menumob.open #menulinks{
-    transition-delay: .6s;
+    -webkit-transition: opacity .3s linear .5s;
+    -moz-transition: opacity .3s linear .5s;
+    -o-transition: opacity .3s linear .5s;
+    transition: opacity .3s linear .5s;
+    position: absolute;
+    z-index: 180;
+    top: calc(50% - 20vw);
+    transform: translateY(0);
     opacity: 100%;
 }
+
 
 #menumob a:nth-child(1) {
    font-weight: 500;
@@ -189,7 +179,7 @@ body {
     display: block;
     height: 45vh;
     margin-right: 1vw;
-    max-width: 100%;
+    max-width: 120vh;
     min-width: 23vw;
     top:50%;
     transform: translateY(-50%);
@@ -198,6 +188,7 @@ body {
 
 #desc {
     position: fixed;
+    z-index: -1;
     top: auto;
     bottom: 8vw;
     height: auto;
@@ -205,6 +196,10 @@ body {
     padding: 10pt 4vw 0 4vw;
     display: table-cell;
     vertical-align: middle;
+}
+
+#desc a{
+    color: #ff7cc5;
 }
 
 #desc h4, p{
