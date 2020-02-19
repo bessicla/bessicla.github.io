@@ -44,7 +44,7 @@ a{
 .c {
     top: 7.8vw;
     position: absolute;
-    z-index: 50;
+    z-index: 100;
     left: 20vw;
     right: 20vw;
     margin: auto;
@@ -58,6 +58,7 @@ a{
 }
 
 #menumob {
+    z-index: 50;
     text-align: center;
     overflow: hidden;
     height: 34vw;
