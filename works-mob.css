@@ -58,6 +58,11 @@ a{
 }
 
 #menumob {
+    -webkit-transition: height .6s ease-out;
+    -moz-transition: height .6s ease-out;
+    -o-transition: height .6s ease-out;
+    transition: height .6s ease-out;
+    transition-delay: .2s;
     z-index: 50;
     text-align: center;
     overflow: hidden;
@@ -70,8 +75,12 @@ a{
 }
 
 #menumob.open {
+    -webkit-transition: height .5s ease;
+    -moz-transition: height .5s ease;
+    -o-transition: height .5s ease;
+    transition: height .5s ease;
+    transition-delay: .02s;
     height: 100vh;
-    transition-delay: 0s;
 }
 
 #menumob span {
@@ -145,7 +154,8 @@ a{
 }
 
 #menumob a:nth-child(1) {
-   font-weight: 700;
+    text-decoration: underline;
+    font-weight: 500;
 }
 
 

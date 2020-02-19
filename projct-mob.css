@@ -55,6 +55,11 @@ a{
 }
 
 #menumob {
+    -webkit-transition: height .6s ease-out;
+    -moz-transition: height .6s ease-out;
+    -o-transition: height .6s ease-out;
+    transition: height .6s ease-out;
+    transition-delay: .2s;
     z-index: 50;
     text-align: center;
     overflow: hidden;
@@ -67,8 +72,12 @@ a{
 }
 
 #menumob.open {
+    -webkit-transition: height .5s ease;
+    -moz-transition: height .5s ease;
+    -o-transition: height .5s ease;
+    transition: height .5s ease;
+    transition-delay: .02s;
     height: 100vh;
-    transition-delay: 0s;
 }
 
 #menumob span {
@@ -168,7 +177,7 @@ body {
     display: block;
     height: 45vh;
     margin-right: 1vw;
-    max-width: 100%;
+    max-width: 120vh;
     min-width: 23vw;
     top:50%;
     transform: translateY(-50%);
@@ -185,6 +194,10 @@ body {
     padding: 10pt 4vw 0 4vw;
     display: table-cell;
     vertical-align: middle;
+}
+
+#desc a{
+    color: #ff7cc5;
 }
 
 #desc h4, p{
