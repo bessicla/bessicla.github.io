@@ -16,7 +16,6 @@ header {
     font-family: 'Nunito', sans-serif;
     width: 100vw;
     height: 34vw;
-    background-color: white;
 }
 
 #navbar {
@@ -42,12 +41,13 @@ a{
 .c {
     top: 7.8vw;
     position: absolute;
-    z-index: 100;
+    z-index: 50;
     left: 20vw;
     right: 20vw;
     margin: auto;
     width: 53vw;
     height: 10vw;
+    background-color: ;
     background-image: url(media/firma2.svg);
     background-position: top;
     background-repeat: no-repeat;
@@ -62,33 +62,12 @@ a{
     position: absolute;
     top: 0;
     display: flex;
+    background-color: white;
 }
 
 #menumob.open {
-    height: 34vw;
-    transition-delay: 0s;
-}
-
-#menumob #linksbk{
-    -webkit-transition: .5s ease-in;
-    -moz-transition: .5s ease-in;
-    -o-transition: .5s ease-in;
-    transition: .5s ease-in;
-    position: fixed;
-    width: 100vw;
-    height: 30vw;
-    background-color: white;
-    overflow: hidden;
-    
-}
-
-#menumob.open #linksbk{
     height: 100vh;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s;
-    
+    transition-delay: 0s;
 }
 
 #menumob span {
@@ -150,18 +129,17 @@ a{
     width: 100vw;
     text-align: center;
     line-height: 4.5vw;
-    position: relative;
-    flex-flow: column;
     display: flex;
-    bottom: 50vh;
-    top: calc(50vh - 20vw); 
-    opacity: 0;
+    flex-flow: column;
+    margin-top: 40vh;
+    opacity: 0%;
 }
 
 #menumob.open #menulinks{
     transition-delay: .6s;
     opacity: 100%;
 }
+
 
 #menumob a:nth-child(1) {
    font-weight: 500;
@@ -198,6 +176,7 @@ body {
 
 #desc {
     position: fixed;
+    z-index: -1;
     top: auto;
     bottom: 8vw;
     height: auto;

@@ -19,7 +19,6 @@ header {
     font-family: 'Nunito', sans-serif;
     width: 100vw;
     height: 34vw;
-    background-color: white;
 }
 
 #navbar {
@@ -66,33 +65,12 @@ a{
     position: absolute;
     top: 0;
     display: flex;
+    background-color: white;
 }
 
 #menumob.open {
-    height: 34vw;
-    transition-delay: 0s;
-}
-
-#menumob #linksbk{
-    -webkit-transition: .5s ease-in;
-    -moz-transition: .5s ease-in;
-    -o-transition: .5s ease-in;
-    transition: .5s ease-in;
-    position: fixed;
-    width: 100vw;
-    height: 30vw;
-    background-color: white;
-    overflow: hidden;
-    
-}
-
-#menumob.open #linksbk{
     height: 100vh;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s;
-    
+    transition-delay: 0s;
 }
 
 #menumob span {
@@ -151,15 +129,13 @@ a{
     -o-transition: opacity .5s;
     transition: opacity .5s;
     transition-delay: 0s;
-    width: 100vw;
+    width: 100%;
     text-align: center;
     line-height: 4.5vw;
-    position: relative;
-    flex-flow: column;
     display: flex;
-    bottom: 50vh;
-    top: calc(50vh - 20vw); 
-    opacity: 0;
+    flex-flow: column;
+    margin-top: 40vh;
+    opacity: 0%;
 }
 
 #menumob.open #menulinks{
