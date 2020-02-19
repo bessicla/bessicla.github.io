@@ -134,22 +134,24 @@ a{
 }
 
 #menumob #menulinks{
-    -webkit-transition: opacity .5s;
-    -moz-transition: opacity .5s;
-    -o-transition: opacity .5s;
-    transition: opacity .5s;
-    transition-delay: 0s;
     width: 100%;
     text-align: center;
     line-height: 4.5vw;
     display: flex;
     flex-flow: column;
-    margin-top: 40vh;
+    transform: translateY(-50vh);
     opacity: 0%;
 }
 
 #menumob.open #menulinks{
-    transition-delay: .6s;
+    -webkit-transition: opacity .3s linear .5s;
+    -moz-transition: opacity .3s linear .5s;
+    -o-transition: opacity .3s linear .5s;
+    transition: opacity .3s linear .5s;
+    position: absolute;
+    z-index: 130;
+    bottom: calc(50% - 20vw);
+    transform: translateY(0vh);
     opacity: 100%;
 }
 
