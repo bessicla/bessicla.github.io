@@ -11,7 +11,8 @@
 
 h3{
     font-family: 'Nunito', sans-serif;
-    font-weight: 700;
+    text-decoration: underline;
+    font-weight: 500;
 }
 
 h4{
@@ -58,7 +59,8 @@ a{
     color: black;
 }
 
-a:hover{ font-weight: 700; }
+a:hover{ 
+text-decoration: underline;}
 
 .s {
     width: 25vw;
