@@ -1,0 +1,69 @@
+*{
+    scroll-behavior:smooth
+}
+
+header {
+    font-family: 'Nunito', sans-serif;
+    font-size: 11pt;
+}
+
+#navbar {
+    width: 100%;
+    background-color: white;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    height: 0px;
+    padding: 5vw;
+    display: inline-flex;
+    align-items: center;
+}
+
+a{
+    -webkit-transition: font-weight .2s;
+    -moz-transition: font-weight .2s;
+    -o-transition: font-weight .2s;
+    transition: font-weight .2s;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{ 
+text-decoration: underline;}
+
+.s {
+        width: 25vw;
+        display: flex;
+        justify-content: space-between;
+}
+    .s a){
+    width: auto;
+    float: none;
+        position: inherit;
+    
+}
+
+
+.c {
+    width: 40vw;
+    margin: auto;
+    height: 2.7vw;
+    background-image: url(media/firma.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.d {
+    width: 25vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.d a{}
+
+.c img {
+    margin: auto;
+    height: auto;
+}

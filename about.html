@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head><link rel="icon"        type="image/png"        href="media/favred.png">     <meta charset="UTF-8">
     <meta charset="UTF-8">
     <title>About</title>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
+
     <script type="text/javascript" src="menu-mob.js"></script>
-    
-    
-    
+
+
+
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" media="all and (orientation:landscape)" href="about.css">
+    <link rel="stylesheet" media="all and (orientation:landscape)" href="footer.css">
+    <link rel="stylesheet" media="all and (orientation:landscape)" href="header.css">
     <link rel="stylesheet" media="all and (orientation:portrait)" href="about-mob.css">
+    <link rel="stylesheet" media="all and (orientation:portrait)" href="footer-mob.css">
 
 
 </head>
@@ -22,16 +25,21 @@
 <header>
     <div id="navbar">
         <div class="s">
-            <a href="works.html">Works</a>
+            <a href="index.html">
+                Works
+            </a>
             <a href="https://www.behance.net/bessicla">Graphics</a>
-            <a href="about.html">About</a>
-            <a>Contacts</a>
+            <a>
+                <h3>About</h3>
+            </a>
+            <a href="#footer">Contacts</a>
         </div>
-        <div class="c">
-            <a href="index.html"><img src="logogif/firma.svg"></a>
-        </div>
-        <div class="d">
-            <a href="https://www.etsy.com/shop/SundayGang" style="color: #ff7cc5">Shop</a>
+        <a href="index.html">
+            <div class="c">
+
+            </div>
+        </a>
+        <div class="d"><a href="https://www.etsy.com/shop/SundayGang" style="color: #ff7cc5">Shop</a>
         </div>
     </div>
 
@@ -41,14 +49,14 @@
         <span></span>
         <span></span>
         <span class="trigger"></span>
-        <div id="linksbk">
-            <div id="menulinks"><a href="works.html">
-                    Works
-                </a><br>
-                <a href="https://www.behance.net/bessicla">Graphics</a><br>
-                <a href="about.html">About</a><br><a>Contacts</a><br>
-                <a href="https://www.etsy.com/shop/SundayGang" style="color: #ff7cc5">Shop</a>
-            </div>
+        <div id="menulinks">
+            <a href="index.html">
+                Works
+            </a>
+            <br>
+            <a href="https://www.behance.net/bessicla">Graphics</a><br>
+            <a href="about.html">About</a><br><a class="hyper">Contacts</a><br>
+            <a href="https://www.etsy.com/shop/SundayGang" style="color: #ff7cc5">Shop</a>
         </div>
     </div>
 
@@ -56,18 +64,79 @@
 
 <body>
 
-    <div id="container">
-<div id="clapic"></div>
-<div id="aboutme">
-<h4>About me</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum in arcu non gravida. Donec fermentum tristique erat id venenatis. Integer interdum orci mollis, porta turpis eu, pharetra est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum in arcu non gravida. Donec fermentum tristique erat id venenatis. Integer interdum orci mollis, porta turpis eu, pharetra est.</p>
-</div>
+    <div class="container">
+        <div class="column">
+            <div class="clapic"></div>
+        </div>
+        <div class="column">
+            <h4>Bessicla is Claudia Bessi,<br> an illustrator and multidisciplinary designer<br> based in Florence, Italy. </h4>
+            <div class="clapic-mob"></div>
+            <p>
+                Claudia's work is influenced by pop art, food, fashion and tv series world, basically all that makes her eyes happy and her hand drawing eagerly. But if she need to make a list of her favorite source of inspiration she would definitely choose: Bruno Munari, Mary Blair, David Hockney, Wes Anderson, Agatha Ruiz De La Prada.
+            </p>
+            <p>
+                Big red cheeks and bold patterns define her illustrations, together with a talented use of colours.
+            </p>
+            <p>
+                Born in 1991 from an artistic family, her parents' studio became her playground, and drawing and visual art has always been her bread and butter.
+            </p>
+            <p>
+                After graduating from a design school in 2014, she started working as a creative director for the Italian online shop Family Nation, fostering her skills in UX and visual communication.
+            </p>
+            <p>
+                Now she works as freelancer Illustrator and Graphic Designer in a multidisciplinary studio together with other professionals of video making, copywriting, interior design and web design.
+            </p>
+            <p>
+                There is not a day that her sketch-book has not being filled by the colours and images that cross Claudia’s mind.
+            </p>
+            <h3>Selected clients:</h3>
+            <p>
+                Crocs Italy,
+                Mou, Canadian Classics, Città Metropolitana Milano, Family Nation, Giunti Editore
+            </p>
+            <h3>Exhibitions:</h3>
+            <p>
+                Hotel Miceli, Firenze, 2018<br>-ING Festival, Dubai Design District, 2019<br>CICIRI Festival, Palermo 2019<br>The Student Hotel, Firenze 2020
+            </p>
+        </div>
     </div>
-    
+
     
 
+    <div id="footer">
+        <div class="sub">
+            <div class="sub">
+                <img class="clo" src="media/contactcloud.svg" alt="">
+            </div>
+            <div class="sub">
 
-</body> 
-    
-  
+                <p><a href="mailto: bessicla@gmail.com">bessicla@gmail.com</a></p>
+                <p>+39 3313493714</p>
+                <a href="http://instagram.com/bessicla">
+                    <div class="subsub"><img src="media/instaicon.svg" alt="">
+                        <p>@bessicla</p>
+                    </div>
+                </a>
+                <a href="http://facebook.com/bessiclaillu">
+                    <div class="subsub"><img src="media/faceicon.svg" alt="">
+                        <p>@bessiclaillu</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="sub">
+            <form action="https://submit-form.com/PqcyUcom5V_qxfwC1kA67" target="_self">
+                <!-- All elements must have a name attribute -->
+                <input type="text" name="Subject" placeholder="Name:">
+                <input type="text" name="email" placeholder="Email:">
+                <textarea name="message" placeholder="Message:"></textarea>
+                <!-- A button of type submit -->
+                <button type="submit">send</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+
 </html>
