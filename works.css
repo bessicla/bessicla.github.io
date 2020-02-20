@@ -302,18 +302,6 @@ text-decoration: underline;}
     padding: 0 51.5vw 0 5vw;
 }
 
-#sifaprima p {
-    font-size: 8pt;
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-#sifaprima p:after {
-  content: "";
-  display: inline-block;
-  width: 100%;
-}
-
 .clearer {
     clear: both;
 }
