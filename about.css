@@ -1,7 +1,3 @@
-
-
-
-
 * {
     margin: 0;
     padding: 0;
@@ -9,28 +5,34 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
-    font-size: 10pt;
+    font-size: 11pt;
+    line-height: 14pt;
     
 }
 
 h3{
     font-family: 'Nunito', sans-serif;
-    font-weight: 700;
+    text-decoration: underline;
+    font-weight: 500;
+    margin-bottom: 5pt;
 }
 
 h4{
-    margin-bottom: 12pt;
-    font-size: 12pt;
+    margin-bottom: 10pt;
     font-family: 'Nunito', sans-serif;
-    font-weight: 600;
+    text-decoration: underline;
+    font-weight: 300;
+    font-size: 16pt;
+    line-height: 21pt;
 }
 
+#folder{
+    display: none;
+}
 
 #menumob{
     display: none;
 }
-
-
 
 header {
     font-family: 'Nunito', sans-serif;
@@ -38,10 +40,12 @@ header {
 }
 
 #navbar {
-    background-color: white;
     width: 100%;
+    background-color: white;
+    z-index: 99;
+    position: fixed;
     top: 0;
-    height: 100px;
+    height: 0px;
     padding: 5vw;
     display: inline-flex;
     align-items: center;
@@ -56,28 +60,59 @@ a{
     color: black;
 }
 
-a:hover{ font-weight: 700; }
+a:hover{ 
+text-decoration: underline;}
 
 .s {
     width: 25vw;
-    display: flex;
-    justify-content: space-between;
+    
 }
 
-.s a{ cursor: pointer; }
+.s a:nth-child(2){
+    position: absolute;
+    left: 11.2vw;
+}
+
+.s a:nth-child(3){
+    position: absolute;
+    left: 18.6vw;
+}
+
+.s a:nth-child(4){
+    position: absolute;
+    left: 24.5vw;
+}
+
+.s a:nth-child(n){
+    float: left;
+}
+
+
+@media only screen and (max-width: 1050px) {
+    .s {
+        display: flex;
+        justify-content: space-between;
+}
+    .s a:nth-child(n){
+    width: auto;
+    float: none;
+        position: inherit;
+    
+}
+    
+}
+
 
 .c {
     width: 40vw;
-    height: auto;
-    display: flex;
-    justify-content: center;
+    margin: auto;
+    height: 2.7vw;
+    background-image: url(media/firma.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-.c img{
-    width: 20vw;
-    margin: auto;
-    height: auto;
-}
 
 .d {
     width: 25vw;
@@ -92,37 +127,150 @@ a:hover{ font-weight: 700; }
     height: auto;
 }
 
-/*hovers importanti*/
+
 
 body{
-    overflow: hidden;
+    padding-top: 10.5vw;
 }
 
-#container{
-    margin-top: 10px;
-    padding: 0 4vw 5vw 4vw;
-    height: calc(100vh - 120px);
+.container{
+    padding: 0vw 5vw 0vw 5vw;
+    height: auto;
     width: 100%;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.column {
+    width: calc(50% - 2.5vw);
+    height: auto;
+}
+
+.column p {
+    margin-top: 16pt;
+}
+
+
+.container.due{
+    margin-top: 4.5vw;
+    margin-bottom: 5vw;
+}
+.container.due .column p{
+    margin-top: 0pt;
+    margin-bottom: 16pt;
+}
+
+.column img{
+    width: 100%;
+}
+
+
+
+#footer{
+    margin-top: 0;
+    background-color: #FFE700;
+    height: 20vw;
+    width: 100%;
+    padding: 3.5vw 5vw 3.5vw 5vw;;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub{
+    position: relative;
+    width: calc(50% - 2.5vw);
+    height: calc(20vw - 7vw);
+    justify-content: space-between;
     display: flex;
 }
 
-#clapic{
-    margin: 0 1vw 0 1vw;
-    width: 50%;
+.sub .sub{
+    line-height: 25pt;
+    display: block;
+    position: relative;
+}
+
+.sub .sub p{
+    line-height: 25pt;
+}
+
+.subsub {
+    display: flex;
+    height: 2.5vw;
+    padding: .15vw 0 .15vw 0;
+    align-items: center;
+    bottom: 2.5vw;
+}
+
+
+
+.sub a:nth-child(3){
+    position: absolute;
+    bottom: 5vw;
+} 
+
+.sub a:nth-child(4){
+    position: absolute;
+    bottom: 2.5vw;
+} 
+
+.subsub img{
     height: 100%;
-    background-image: url(works/room/0.png);
-    background-size: cover;
+    margin-right: .5vw;
 }
 
-#aboutme{
-    margin: 0 1vw 0 1vw;
-    width: 50%;
+
+
+/*hovers importanti*/
+
+.sub:nth-child(2){
+} 
+
+.clo{
+    height: 11vw;
 }
 
-#aboutme p{
+.sub form{
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
 
+.sub input{
+    width: calc(50% - 2.5vw);
+    padding: 0 0 0 .5vw;
+    height: 2.5vw;
+    background-color: white;
+    border: 0px;
+}
+
+
+.sub textarea{
+    padding: .5vw;
+    position: absolute;
+    width: 100%;
+    top: 3vw;
+    height: 7vw;
+    border: 0;
+    resize: none;
+    
+}
+
+.sub button{
+    position: absolute;
+    border: 0;
+    background-color: black;
+    color: white;
+    height: 2.5vw;
+    padding: .15vw 0 .15vw 0;
+    text-align: center;
+    width: 10vw;
+    bottom: 0;
+    right: 0;
+}
 
 .clearer {
     clear: both;
