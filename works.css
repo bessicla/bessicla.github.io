@@ -294,6 +294,26 @@ text-decoration: underline;}
 
 
 
+#sifaprima {
+    z-index: 200;
+    height: calc(3.5 - 8pt);
+    background-color: #FFE700;
+    margin-top: calc(-3.5vw - 8pt);
+    padding: 0 51.5vw 0 5vw;
+}
+
+#sifaprima p {
+    font-size: 8pt;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#sifaprima p:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
 .clearer {
     clear: both;
 }
