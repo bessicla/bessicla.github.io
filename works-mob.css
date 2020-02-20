@@ -45,13 +45,12 @@ a{
     top: 7.8vw;
     position: absolute;
     z-index: 100;
-    left: 20vw;
-    right: 20vw;
+    left: 10vw;
+    right: 10vw;
     margin: auto;
-    width: 53vw;
+    width: 80vw;
     height: 10vw;
-    background-color: ;
-    background-image: url(media/firma2.svg);
+    background-image: url(media/firma.svg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
@@ -66,7 +65,7 @@ a{
     z-index: 50;
     text-align: center;
     overflow: hidden;
-    height: 34vw;
+    height: 40vw;
     width: 100vw;
     position: absolute;
     top: 0;
@@ -97,7 +96,7 @@ a{
 }
 
 #menumob span:nth-child(3) {
-    top: 24.8vw;
+    top: 29.8vw;
     
 }
 
@@ -106,7 +105,7 @@ a{
 }
 
 #menumob span:nth-child(2) {
-    top: 23.2vw;
+    top: 28.2vw;
 }
 
 #menumob.open span:nth-child(2) {
@@ -114,11 +113,11 @@ a{
 }
 
 #menumob span:nth-child(1) {
-    top: 21.6vw;
+    top: 26.6vw;
 }
 
 #menumob.open span:nth-child(1) {
-    top: 23.2vw;
+    top: 28.2vw;
     transform: rotate(-45deg);
 }
 
@@ -127,11 +126,9 @@ a{
     opacity: 0;
     height: calc(0.8vw * 5);
     background-color: #000000;
-    top: 21.6vw;
+    top: 26.6vw;
 }
 
-#menumob.open span:nth-child(4) {
-}
 
 #menumob #menulinks{
     width: 100%;
@@ -224,7 +221,6 @@ a{
 }
 
 .sub{
-    position: relative;
     text-align: center;
     display: flex;
     flex-flow: wrap;
