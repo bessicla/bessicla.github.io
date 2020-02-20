@@ -161,9 +161,11 @@ a{
 
 
 #grid{
-    margin: 40vw 0vw 0vw 0vw; 
+    margin: 40vw 1vw 1vw 1vw; 
     display: grid;
     grid-template-columns: auto auto;
+    grid-row-gap: 1vw;
+    grid-column-gap: 1vw;
 }
 
 
