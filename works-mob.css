@@ -161,7 +161,7 @@ a{
 
 
 #grid{
-    margin: 34vw 1vw 0 0;  
+    margin: 40vw 1vw 0 0;  
     column-count: 2;
     column-gap: 0;   
 }
@@ -184,11 +184,11 @@ a{
 
 
 #footer{
-    margin-top: 5vw;
+    margin-top: -1.5vw;
     background-color: #FFE700;
     height: auto;
     width: 100%;
-    padding: 8vw 10vw 10vw 10vw;
+    padding: 10vw 10vw 10vw 10vw;
     justify-content: space-between;
 }
 
