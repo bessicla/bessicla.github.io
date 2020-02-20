@@ -68,6 +68,10 @@ body{
     background-size: cover;
 }
 
+.clapic-mob{
+    display: none;
+}
+
 
 
 .clearer {
