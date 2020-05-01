@@ -27,8 +27,14 @@
        $(".item").shuffle();
  });
 
+$(document).ready(function () {
+    $( "body" ).animate({
+    opacity: 1,
+  }, 700);
+});
+
 document.addEventListener('DOMContentLoaded', function() {
    $( "#grid" ).animate({
     opacity: 1,
-  }, 800);
+  }, 700);
 }, false);
