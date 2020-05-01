@@ -33,7 +33,7 @@ body{
 
 
 #grid{
-    visibility: none;
+    opacity: 0;
     margin-top: 10vw;
     padding: 0vw 5% 3vw 5%;
     height: auto;
