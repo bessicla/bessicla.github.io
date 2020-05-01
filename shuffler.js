@@ -27,14 +27,10 @@
        $(".item").shuffle();
  });
 
-$(document).ready(function () {
+$(window).ready(function () {
     $( "body" ).animate({
     opacity: 1,
   }, 400);
 });
 
-$(window).on('load', function() {
- $( "#grid" ).animate({
-    opacity: 1,
-  }, 400);
-});
+
