@@ -30,11 +30,11 @@
 $(document).ready(function () {
     $( "body" ).animate({
     opacity: 1,
-  }, 700);
+  }, 400);
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-   $( "#grid" ).animate({
+$(window).on('load', function() {
+ $( "#grid" ).animate({
     opacity: 1,
-  }, 700);
-}, false);
+  }, 400);
+});
