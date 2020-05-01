@@ -26,3 +26,9 @@
  $(document).ready(function() {
        $(".item").shuffle();
  });
+
+document.addEventListener('DOMContentLoaded', function() {
+   $( "#grid" ).animate({
+    opacity: 1,
+  }, 800);
+}, false);
