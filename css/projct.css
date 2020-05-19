@@ -33,7 +33,7 @@ h4 {
 
 
 .carousel {
-    margin-top: 100px;
+    margin-top: 10vw;
 }
 
 
@@ -48,9 +48,6 @@ h4 {
     max-width: 100%;
     min-width: 30vh;
     margin-right: 3.5vw;
-    background: white;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 .card.is-selected {
